@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="section_trial">
+      <div class="left">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="right">
+        <div class="try_card">
+          <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+        </div>
+        <div class="form_container">
+          <div class="free_trial_form">
+            <img class="error_1 error" src="images/icon-error.svg" alt="" />
+            <img class="error_2 error" src="images/icon-error.svg" alt="" />
+            <img class="error_3 error" src="images/icon-error.svg" alt="" />
+            <img class="error_4 error" src="images/icon-error.svg" alt="" />
+            <p class="error_text error_text1">First Name cannot be empty</p>
+            <p class="error_text error_text2">Last Name cannot be empty</p>
+            <p class="error_text error_text3">
+              Looks like this is not an email
+            </p>
+            <p class="error_text error_text4">Password cannot be empty</p>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder="First Name"
+            />
+
+            <input
+              type="text"
+              name="last_name"
+              id="last_name"
+              placeholder="Last Name"
+            />
+
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+
+            <a class="btn" href="#">CLAIM YOUR FREE TRIAL</a>
+            <p>
+              By clicking the button, you are agreeing to our
+              <a class="tas" href="#">Terms and Services</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

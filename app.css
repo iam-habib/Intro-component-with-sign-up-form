@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz@1,9..144&family=Josefin+Sans:wght@300;400;600&family=Lato&family=Manrope:wght@500;700&family=Montserrat&family=Open+Sans:wght@400;800&family=Oswald&family=Poppins:wght@300;400;600&family=Roboto&display=swap");
+
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --DarkBlue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url(images/bg-intro-desktop.png), var(--Red);
+  background-size: cover;
+}
+
+.section_trial {
+  width: 75%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section_trial .left {
+  width: 47%;
+}
+
+.left h1 {
+  font-family: "poppins";
+  font-size: 3.8rem;
+  color: rgba(256, 256, 256, 1);
+  line-height: 1em;
+  margin: 0.5em auto;
+}
+
+.left p {
+  font-family: "poppins";
+  font-size: 1.2rem;
+  color: rgba(256, 256, 256, 0.8);
+  line-height: 1.5em;
+}
+
+.section_trial .right {
+  width: 50%;
+}
+
+.right .try_card {
+  width: 100%;
+  margin: 1em 0;
+  padding: 1em;
+  background-color: var(--Blue);
+  border-radius: 0.4em;
+  box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.try_card p {
+  font-family: "poppins";
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.right .form_container {
+  width: 100%;
+  height: 100%;
+  padding: 1.5em 2em;
+  background-color: #fff;
+  border-radius: 0.4em;
+  box-shadow: 0px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.free_trial_form {
+  margin: 1em auto 2em;
+  position: relative;
+}
+
+.free_trial_form input {
+  width: 100%;
+  padding: 1em 2em;
+  margin: 1em auto 1em;
+  font-family: "poppins";
+  font-size: 1rem;
+  color: black;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+}
+
+input:focus {
+  outline-color: var(--DarkBlue);
+}
+
+.free_trial_form .btn {
+  width: 100%;
+  padding: 1.1em 0 1em;
+  margin: 1em auto 1em;
+  display: block;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  font-family: "poppins";
+  text-align: center;
+  background-color: var(--Green);
+  box-shadow: 0 3px 2px rgba(11, 136, 82, 0.8);
+  border-radius: 0.3em;
+}
+
+.free_trial_form .btn:hover {
+  opacity: 0.8;
+}
+
+.free_trial_form p {
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: "poppins";
+  color: var(--Grayish-Blue);
+}
+
+.free_trial_form p a {
+  color: var(--Red);
+  font-weight: 600;
+}
+
+.error {
+  position: absolute;
+  top: 0%;
+  right: 5%;
+}
+
+.error_1 {
+  top: 8%;
+  right: 5%;
+  display: none;
+}
+
+.error_2 {
+  top: 27%;
+  display: none;
+}
+
+.error_3 {
+  top: 46%;
+  display: none;
+}
+
+.error_4 {
+  top: 66%;
+  display: none;
+}
+
+.free_trial_form .error_text {
+  font-family: "poppins";
+  color: var(--Red);
+  font-style: italic;
+  font-weight: 500;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+.free_trial_form .error_text1 {
+  display: none;
+  top: 17%;
+}
+
+.free_trial_form .error_text2 {
+  display: none;
+  top: 37%;
+}
+
+.free_trial_form .error_text3 {
+  display: none;
+  top: 57%;
+}
+
+.free_trial_form .error_text4 {
+  display: none;
+  top: 76%;
+}
+
+.free_trial_form .active {
+  border: 2px solid var(--Red);
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1680px) {
+  .left h1 {
+    font-size: 3.4rem;
+  }
+
+  .left p {
+    font-size: 1.05rem;
+    line-height: 1.5em;
+  }
+
+  .free_trial_form p {
+    font-size: 0.7rem;
+  }
+
+  .right .try_card {
+    width: 100%;
+  }
+
+  .right .form_container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1500px) {
+  html {
+    font-size: 15px;
+  }
+
+  .section_trial {
+    width: 80%;
+  }
+
+  .left h1 {
+    font-size: 3.5rem;
+  }
+
+  .left p {
+    font-size: 1.1rem;
+    line-height: 1.5em;
+  }
+
+  .free_trial_form p {
+    font-size: 0.7rem;
+  }
+
+  .right .try_card {
+    width: 100%;
+  }
+
+  .right .form_container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1350px) {
+  html {
+    font-size: 14px;
+  }
+
+  .section_trial {
+    width: 81%;
+  }
+
+  .left h1 {
+    font-size: 3.2rem;
+  }
+
+  .left p {
+    font-size: 1.05rem;
+    line-height: 1.5em;
+  }
+
+  .free_trial_form p {
+    font-size: 0.7rem;
+  }
+
+  .right .try_card {
+    width: 100%;
+  }
+
+  .right .form_container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+
+  .section_trial {
+    width: 85%;
+  }
+
+  .left h1 {
+    font-size: 3rem;
+  }
+
+  .left p {
+    font-size: 1rem;
+    line-height: 1.5em;
+  }
+
+  .free_trial_form p {
+    font-size: 0.7rem;
+  }
+
+  .right .try_card {
+    width: 100%;
+  }
+
+  .right .form_container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+  html {
+    font-size: 13px;
+  }
+
+  .section_trial {
+    width: 85%;
+  }
+
+  .left h1 {
+    font-size: 3rem;
+  }
+
+  .left p {
+    font-size: 1rem;
+    line-height: 1.5em;
+  }
+
+  .free_trial_form p {
+    font-size: 0.7rem;
+  }
+
+  .right .try_card {
+    width: 100%;
+  }
+
+  .right .form_container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  html {
+    font-size: 12px;
+  }
+
+  .section_trial {
+    width: 90%;
+  }
+
+  .left h1 {
+    font-size: 3rem;
+  }
+
+  .left p {
+    font-size: 1rem;
+    line-height: 1.5em;
+  }
+
+  .free_trial_form p {
+    font-size: 0.6rem;
+  }
+
+  .right .try_card {
+    width: 100%;
+  }
+
+  .right .form_container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 750px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    background: url(images/bg-intro-mobile.png), var(--Red);
+  }
+
+  .section_trial {
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 5em auto 0em;
+    text-align: center;
+  }
+
+  .section_trial .left {
+    width: 100%;
+    margin: 3em auto;
+  }
+
+  .section_trial .right {
+    width: 100%;
+  }
+
+  .right .try_card {
+    width: 100%;
+  }
+
+  .right .form_container {
+    width: 100%;
+  }
+
+  .left h1 {
+    font-size: 2rem;
+  }
+
+  .left p {
+    font-size: 1rem;
+    line-height: 1.5em;
+  }
+
+  .free_trial_form p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 372px) and (max-width: 450px) {
+  .free_trial_form p {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 372px) {
+  .free_trial_form p {
+    font-size: 0.6rem;
+  }
+
+  .error_1 {
+    top: 7%;
+    right: 5%;
+    display: none;
+  }
+
+  .error_2 {
+    top: 26%;
+    display: none;
+  }
+
+  .error_3 {
+    top: 45%;
+    display: none;
+  }
+
+  .error_4 {
+    top: 64%;
+    display: none;
+  }
+
+  .free_trial_form .error_text1 {
+    display: none;
+    top: 16%;
+  }
+
+  .free_trial_form .error_text2 {
+    display: none;
+    top: 35%;
+  }
+
+  .free_trial_form .error_text3 {
+    display: none;
+    top: 54%;
+  }
+
+  .free_trial_form .error_text4 {
+    display: none;
+    top: 73%;
+  }
+}
