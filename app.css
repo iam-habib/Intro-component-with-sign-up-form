@@ -408,6 +408,9 @@ input:focus {
   .right .form_container {
     width: 100%;
   }
+  
+  .free_trial_form input {
+    border: 1px solid black;
 
   .left h1 {
     font-size: 2rem;
