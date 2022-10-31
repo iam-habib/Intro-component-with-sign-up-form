@@ -411,6 +411,11 @@ input:focus {
   
   .free_trial_form input {
     border: 1px solid black;
+    
+    input:focus {
+      border: none;
+  outline-color: var(--DarkBlue);
+}
 
   .left h1 {
     font-size: 2rem;
